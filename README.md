@@ -1,4 +1,4 @@
-## Welcome, I'm Khen 👋
+## Welcome, Hello I'm Khen 👋
 
 <!--
 **BorceKhen/BorceKhen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
