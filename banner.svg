@@ -1,74 +1,82 @@
 <svg width="900" height="220" viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="900" y2="220" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0E1324" />
-      <stop offset="55%" stop-color="#151C36" />
-      <stop offset="100%" stop-color="#1E2547" />
+    <linearGradient id="hsoBg" x1="0" y1="0" x2="900" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#09101D" />
+      <stop offset="55%" stop-color="#0F1B2E" />
+      <stop offset="100%" stop-color="#132A3A" />
     </linearGradient>
-    <radialGradient id="amberGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(760 55) rotate(135) scale(290 190)">
-      <stop offset="0%" stop-color="#F5B841" stop-opacity="0.32" />
-      <stop offset="55%" stop-color="#E89C38" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#0E1324" stop-opacity="0" />
+    <radialGradient id="cyanArcGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(760 110) rotate(135) scale(300 200)">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.28" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#09101D" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="indigoGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(130 190) rotate(-25) scale(340 160)">
-      <stop offset="0%" stop-color="#8FA1F7" stop-opacity="0.24" />
-      <stop offset="100%" stop-color="#0E1324" stop-opacity="0" />
+    <radialGradient id="amberRimGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(115 45) rotate(30) scale(260 140)">
+      <stop offset="0%" stop-color="#F5C542" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#09101D" stop-opacity="0" />
     </radialGradient>
-    <linearGradient id="goldRule" x1="48" y1="0" x2="420" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#F5B841" />
-      <stop offset="65%" stop-color="#8FA1F7" />
-      <stop offset="100%" stop-color="#8FA1F7" stop-opacity="0" />
+    <linearGradient id="boltAccent" x1="48" y1="0" x2="450" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F5C542" />
+      <stop offset="45%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#2D8B94" stop-opacity="0" />
     </linearGradient>
   </defs>
 
-  <!-- Main Frame -->
-  <rect x="1" y="1" width="898" height="218" rx="14" fill="url(#bgGrad)" stroke="#2D3866" stroke-width="2" />
-  <rect x="1" y="1" width="898" height="218" rx="14" fill="url(#amberGlow)" />
-  <rect x="1" y="1" width="898" height="218" rx="14" fill="url(#indigoGlow)" />
+  <!-- Main Tactical Frame -->
+  <rect x="1" y="1" width="898" height="218" rx="14" fill="url(#hsoBg)" stroke="#1E3A5F" stroke-width="2" />
+  <rect x="1" y="1" width="898" height="218" rx="14" fill="url(#cyanArcGlow)" />
+  <rect x="1" y="1" width="898" height="218" rx="14" fill="url(#amberRimGlow)" />
 
-  <!-- Subtle Technical Grid Lines -->
-  <g stroke="#8FA1F7" stroke-opacity="0.07" stroke-width="1">
+  <!-- Subtle HSO Tactical Grid & Teal Diagonal Accent -->
+  <g stroke="#38BDF8" stroke-opacity="0.08" stroke-width="1">
     <line x1="0" y1="55" x2="900" y2="55" />
     <line x1="0" y1="110" x2="900" y2="110" />
     <line x1="0" y1="165" x2="900" y2="165" />
-    <line x1="620" y1="0" x2="620" y2="220" />
+    <line x1="600" y1="0" x2="600" y2="220" />
     <line x1="760" y1="0" x2="760" y2="220" />
   </g>
+  <polygon points="845,1 899,1 899,88" fill="#2D8B94" fill-opacity="0.22" />
+  <line x1="0" y1="18" x2="18" y2="0" stroke="#F5C542" stroke-opacity="0.45" stroke-width="2" />
 
-  <!-- Top Status Pill -->
-  <rect x="48" y="34" width="248" height="26" rx="13" fill="#1B2342" stroke="#F5B841" stroke-opacity="0.45" />
-  <circle cx="66" cy="47" r="4" fill="#F5B841" />
-  <text x="80" y="51" fill="#F3D9A4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="600" letter-spacing="1.1">CANBOARSEE • ON THE LINE</text>
+  <!-- Top HSO-S6 Style ID Badge -->
+  <rect x="48" y="32" width="232" height="26" rx="5" fill="#111E33" stroke="#38BDF8" stroke-opacity="0.55" />
+  <rect x="48" y="32" width="66" height="26" rx="5" fill="#F5C542" />
+  <text x="81" y="49" text-anchor="middle" fill="#09101D" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="800">HSO-S6</text>
+  <text x="126" y="49" fill="#E2E8F0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="600" letter-spacing="0.9">CANBOARSEE • HAND</text>
 
-  <!-- Name & Subtitle -->
+  <!-- Name & Handle -->
   <text x="48" y="106" fill="#F8FAFC" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="38" font-weight="800" letter-spacing="-0.5">Khen Borce</text>
-  <text x="275" y="106" fill="#F5B841" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="600">@BorceKhen</text>
+  <text x="278" y="106" fill="#38BDF8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="700">@BorceKhen</text>
 
-  <rect x="48" y="122" width="380" height="2.5" rx="1.25" fill="url(#goldRule)" />
+  <rect x="48" y="121" width="400" height="2.5" rx="1.25" fill="url(#boltAccent)" />
 
-  <text x="48" y="152" fill="#CBD5E1" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15.5" font-weight="500">
+  <text x="48" y="151" fill="#CBD5E1" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15.5" font-weight="500">
     Building offline Android &amp; Windows utilities, accessible web apps, and tactile UIs.
   </text>
 
   <!-- Focus Tags -->
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="600">
-    <rect x="48" y="170" width="94" height="24" rx="6" fill="#1A2240" stroke="#364478" />
-    <text x="95" y="186" text-anchor="middle" fill="#8FA1F7">KOTLIN</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="700">
+    <rect x="48" y="169" width="96" height="24" rx="5" fill="#101D30" stroke="#2D8B94" />
+    <text x="96" y="185" text-anchor="middle" fill="#67E8F9">KOTLIN</text>
 
-    <rect x="152" y="170" width="144" height="24" rx="6" fill="#1A2240" stroke="#364478" />
-    <text x="224" y="186" text-anchor="middle" fill="#F5B841">JETPACK COMPOSE</text>
+    <rect x="154" y="169" width="146" height="24" rx="5" fill="#101D30" stroke="#F5C542" stroke-opacity="0.6" />
+    <text x="227" y="185" text-anchor="middle" fill="#F5C542">JETPACK COMPOSE</text>
 
-    <rect x="306" y="170" width="112" height="24" rx="6" fill="#1A2240" stroke="#364478" />
-    <text x="362" y="186" text-anchor="middle" fill="#8FA1F7">PYTHON • WEB</text>
+    <rect x="310" y="169" width="118" height="24" rx="5" fill="#101D30" stroke="#2D8B94" />
+    <text x="369" y="185" text-anchor="middle" fill="#38BDF8">PYTHON • WEB</text>
   </g>
 
-  <!-- Right Motif: Subtle Amber Signal Rings + Retro Receiver Silhouette (nod to PFP) -->
-  <g transform="translate(755 110)">
-    <circle cx="0" cy="0" r="68" stroke="#F5B841" stroke-opacity="0.16" stroke-width="1.5" stroke-dasharray="6 6" />
-    <circle cx="0" cy="0" r="46" stroke="#8FA1F7" stroke-opacity="0.28" stroke-width="1.5" />
-    <circle cx="0" cy="0" r="24" fill="#1B2342" stroke="#F5B841" stroke-opacity="0.65" stroke-width="1.5" />
-    <path d="M-9 -6 C-12 2 -2 12 6 9 L10 5 L5 1 L2 4 C-1 2 -2 1 -4 -2 L-1 -5 L-5 -10 Z" fill="#F5B841" />
-    <path d="M9 -12 C15 -6 15 4 9 10" stroke="#8FA1F7" stroke-width="2" stroke-linecap="round" fill="none" />
-    <path d="M15 -18 C24 -9 24 7 15 16" stroke="#F5B841" stroke-opacity="0.65" stroke-width="1.8" stroke-linecap="round" fill="none" />
+  <!-- Right Motif: Harumasa Electric Bow Arc + Lightning Bolt + 4-Point Sparkles -->
+  <g transform="translate(760 110)">
+    <circle cx="0" cy="0" r="70" stroke="#38BDF8" stroke-opacity="0.20" stroke-width="1.5" stroke-dasharray="7 5" />
+    <path d="M-24 -56 C24 -36 24 36 -24 56" stroke="#00E5FF" stroke-width="3.2" stroke-linecap="round" fill="none" />
+    <path d="M-24 -56 L-24 56" stroke="#67E8F9" stroke-opacity="0.55" stroke-width="1.4" />
+    <!-- Electrified Arrow / Lightning Bolt -->
+    <path d="M-36 0 L34 0" stroke="#F5C542" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M22 -7 L36 0 L22 7 Z" fill="#F5C542" />
+    <path d="M-54 -22 L-38 -12 L-46 -4 L-30 6" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M36 -38 L44 -22 L34 -18 L46 -4" stroke="#67E8F9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <!-- 4-point Sparkle Stars (matching character art) -->
+    <path d="M-52 -44 L-49 -36 L-41 -33 L-49 -30 L-52 -22 L-55 -30 L-63 -33 L-55 -36 Z" fill="#67E8F9" fill-opacity="0.85" />
+    <path d="M44 26 L46 32 L52 34 L46 36 L44 42 L42 36 L36 34 L42 32 Z" fill="#F5C542" fill-opacity="0.85" />
   </g>
 </svg>
